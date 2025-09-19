@@ -89,6 +89,37 @@ span{
     border-bottom: 3px solid #4FC3F7;
     color: #4FC3F7;
 }
+/* *************************************PAGE CONTENT**************************************************** */
+/* main */
+.maincont{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* first section */
+.firstsect{
+    margin: 20px;
+    display: flex;
+    gap: 7em;
+    padding: 20px;
+    /* width: 100%; */
+}
+/* .firstsectimg{
+    margin: ;
+} */
+.firstsectimg img{
+    height: 300px;
+    width: 300px;
+}
+.firstsecttext{
+    max-width: 50%;
+}
+.firstsecttext p{
+    line-height: 1.5;
+    color: azure;
+    font-size: 20px;
+}
 /* **************************************WEBPAGE RESPONSIVENESS******************************************/
 /* *****************************************NAVBAR**************************************************** */
 .material-icons-outlined{
