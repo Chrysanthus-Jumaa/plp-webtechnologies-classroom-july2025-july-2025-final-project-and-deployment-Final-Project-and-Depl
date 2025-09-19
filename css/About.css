@@ -113,7 +113,7 @@ span{
     width: 300px;
 }
 .firstsecttext{
-    max-width: 50%;
+    width: 50%;
 }
 .firstsecttext p{
     line-height: 1.5;
@@ -202,5 +202,26 @@ span{
 @media screen and (min-width: 870px){
     .logo{
         font-size: 30px;
+    }
+}
+/* *************************************FIRST MAIN SECTION********************************************** */
+@media screen and (max-width: 870px){
+    .maincont{
+        margin: 35px;
+    }
+    .firstsect{
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .firstsectimg{
+        display: flex;
+        justify-content: center;
+    }
+    .firstsecttext{
+        justify-content: center;
+        width: 100%;
     }
 }
