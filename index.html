@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+    <!-- creating the navbar section. It has a header containing the logo as separate and the remaining navbar sections -->
+    <header class="navheader">
+        <a href="index.html" class="logo">
+            GeoInfo <span>Hub</span>
+        </a>
+        <div class="menu-icon">
+                <span class="material-icons-outlined options" onclick="opensidebar()">menu</span>
+        </div>
+        <nav class="navbar" id="navbar">
+            <span class="material-icons-outlined cancel" onclick="closesidebar()">close</span>
+            <a class="view" href="#">Home</a>
+            <a class="firstelem view" href="#">About</a>
+            <a class="view" href="#">Applications</a>
+            <a class="view" href="#">Contact Me</a>
+        </nav>
+    </header>
+    <!-- creating the home content section of the navbar -->
+    <section class="home-content">
+        <div class="firsttext">
+            <p>Welcome to GeoInfo Hub</p>
+        </div>
+
+        <div class="slogantext">
+            <h1>
+                Mapping the world, one pixel at a time.
+            </h1>
+        </div>
+
+        <div class="buttoncont">
+            <button type="button">Learn More</button>
+        </div>
+    </section>
+    <div id="star-container"></div>
+    <script src="/js/index.js"></script>
+</body>
+</html>
