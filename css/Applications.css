@@ -89,6 +89,41 @@ span{
     border-bottom: 3px solid #4FC3F7;
     color: #4FC3F7;
 }
+/* styling the main section */
+.maincont{
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+/* styling the first main section */
+.maincont .firstsect{
+    display: flex;
+    margin: 20px;
+    gap: 7em;
+}
+.firstsect .avatar1cont{
+    display: flex;
+}
+.avatar1cont img{
+    height: 400px;
+    width: 400px;
+}
+.firstsecttext{
+    align-items: center;
+    display: flex;
+}
+.firstsecttext h2{
+    font-size: 50px;
+    color: azure;
+    line-height: 1.5;
+    /* text-align: center; */
+}
+.secondsect p{
+    color: azure;
+    font-size: 20px;
+    line-height: 1.5;
+}
 /* **************************************WEBPAGE RESPONSIVENESS******************************************/
 /* *****************************************NAVBAR**************************************************** */
 .material-icons-outlined{
@@ -170,6 +205,21 @@ span{
 
 @media screen and (min-width: 870px){
     .logo{
+        font-size: 30px;
+    }
+}
+/* ********************************************FIRST MAIN SECTION**************************************** */
+@media screen and (max-width: 870px){
+    .maincont{
+        margin: 35px;
+    }
+    .firstsect{
+        flex-direction: column;
+    }
+    .avatar1cont{
+        justify-content: center;
+    }
+    .firstsecttext h2{
         font-size: 30px;
     }
 }
