@@ -89,6 +89,189 @@ span{
     border-bottom: 3px solid #4FC3F7;
     color: #4FC3F7;
 }
+/* ****************************************************FORM SECTION*************************************************** */
+/* styling the contact form section */
+/* styling the header of the form */
+.cme{
+    align-items: center;
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 2px;
+    padding: 10px;
+    font-weight: 600;
+}
+/* styling the form container */
+.contactform{
+    margin: 100px auto;
+    margin-top: 25px;
+    max-width: 1200px;
+    height: 500px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    position: relative;
+    border: 2px solid #4FC3F7;
+    box-shadow: 0 0 15px #4FC3F7, 0 0 40px #4FC3F7;
+    display: flex;
+    line-height: 1.5;
+}
+/* styling the left column */
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* styling the h3 tag in the contact form */
+.left .heading{
+    color: #4FC3F7;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+/* styling the paragraph tag of the form */
+.left p{
+    color: white;
+    line-height: 1.5;
+    margin: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+}
+/* styling the form */
+form{
+    margin-top: 20px;
+    line-height: 1.5;
+}
+/* styling the input box tag */
+.inputbox{
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+/* styling the input box fields along with the messaging area */
+/* .inputbox input,.inputbox textarea{
+    /* line-height: 1.5; 
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #4FC3F7;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: aliceblue;
+} */
+/* styling the submit button */
+.btn{
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #4FC3F7;
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    /* justify-content: center; */
+    transition: .5s ease;
+}
+/* creating the buttons hover effects */
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #4FC3F7;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: aliceblue;
+}
+
+
+/* removing the resizing feature and giving the text area a height */
+.inputbox textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #4FC3F7;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.219);
+    color: aliceblue;
+    resize: none;
+    line-height: 1.5;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+/* specifying the size of the right column */
+.right{
+    width: 50%;
+}
+/* styling the image container */
+.illustrations{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+/* styling the image itself */
+.illustrations img{
+    width: 70%;
+    margin: auto;
+    margin-top: 1px;
+}
+/* styling the email container */
+.emailname{
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    margin-left: 80px;
+}
+/* styling the email content */
+.emailname .socials{
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+/* styling the mail icon */
+.emailname .socials a{
+    font-size: 25px;
+    color: #fff;
+    display: inline;
+    border: 2px solid #4FC3F7;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px #4FC3F7, 0 0 10px #4FC3F7;
+    transition: 0.3s ease;
+    margin: 0 8px;
+    align-items: center;
+    line-height: 38px;
+}
+/* creating the mail icon hover effect */
+.emailname .socials a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color: #4FC3F7;
+    border: 2px solid #4FC3F7;
+}
+/* styling the email h3 tag itself */
+.emailname h3{
+    line-height: 1.5;
+    color: #4FC3F7;
+    font-size: 25px;
+}
+
 /* **************************************WEBPAGE RESPONSIVENESS******************************************/
 /* *****************************************NAVBAR**************************************************** */
 .material-icons-outlined{
@@ -173,3 +356,85 @@ span{
         font-size: 30px;
     }
 }
+/* **************************************************MAKING THE FORM RESPONSIVE************************************** */
+@media screen and (max-width: 850px){
+    .cme{
+        font-size: 35px;
+        justify-content: center;
+    }
+    .contactform{
+        flex-direction: column;
+        height: 100%;
+        /* width: 100%; */
+    }
+    .left{
+        width: 100%;
+    }
+    .left .heading{
+        font-size: 30px;
+    }
+    .emailname{
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+        width: 100%;
+        align-items: center;
+    }
+    .left .btn{
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+
+        /* margin-left: 30px; */
+    }
+    .right{
+        /* position: relative; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+    .emailname h3{
+        font-size: 14px;
+        justify-content: center;
+        display: flex;
+    }
+    .impromptcont{
+        display: flex;
+        justify-content: center;
+    }
+    .illustrations{
+        display: flex;
+        justify-content: center;
+    }
+    .illustrations img{
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        width: 100px;
+    }
+}
+@media screen and (min-width: 325px){
+    .cme{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1200px){
+    .emailname h3{
+        font-size: 18px;
+    }
+    .emailname{
+        margin: 10px;
+        padding: 10px;
+        /* width: 50%; */
+    }
+}
+/* @media screen and (max-width: 1200px){
+    .emailname{
+        margin: 10px;
+        padding: 10px;
+    }
+    .emailname h3{
+        /* font-size: 22px; 
+    }
+} */
