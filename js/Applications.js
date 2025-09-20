@@ -29,3 +29,15 @@ const container = document.getElementById('star-container');
 
     container.appendChild(star);
   }
+
+const slider = document.querySelector('.card-slider');
+const leftBtn = document.querySelector('.nav-btn.left');
+const rightBtn = document.querySelector('.nav-btn.right');
+
+leftBtn.addEventListener('click', () => {
+  slider.scrollBy({ left: -300, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+  slider.scrollBy({ left: 300, behavior: 'smooth' });
+});
