@@ -189,9 +189,29 @@ span{
   color: #4FC3F7;
 }
 
-/* .nav-btn:focus {
-  outline: 2px solid #007BFF;
-} */
+/* last section */
+.maincont .lastsect{
+    display: flex;
+    margin: 20px;
+    gap: 7em;
+}
+.lastsect .avatar2cont{
+    display: flex;
+}
+.avatar2cont img{
+    height: 400px;
+    width: 400px;
+}
+.lastsecttext{
+    align-items: center;
+    display: flex;
+}
+.lastsecttext h2{
+    font-size: 50px;
+    color: azure;
+    line-height: 1.5;
+    /* text-align: center; */
+}
 /* **************************************WEBPAGE RESPONSIVENESS******************************************/
 /* *****************************************NAVBAR**************************************************** */
 .material-icons-outlined{
@@ -326,4 +346,18 @@ span{
   .nav-btn.right {
     right: 5px;
   }
+}
+/* **********************************************LAST SECTION************************************ */
+@media screen and (max-width: 870px){
+    .lastsect{
+        flex-direction: column;
+        margin: 0;
+        /* display: none; */
+    }
+    .avatar2cont{
+        justify-content: center;
+    }
+    .lastsecttext h2{
+        font-size: 30px;
+    }
 }
