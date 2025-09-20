@@ -18,7 +18,7 @@
 
 ## 🔗 Live Site
 
-Visit the hosted site here: [GeoInfo Hub Live](https://your-live-site-url.com)
+Visit the hosted site here: [GeoInfo Hub Live](https://geoinfohub.netlify.app/)
 
 ---
 
