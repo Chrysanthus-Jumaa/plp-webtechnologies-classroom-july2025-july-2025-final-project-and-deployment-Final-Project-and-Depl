@@ -120,6 +120,25 @@ span{
     color: azure;
     font-size: 20px;
 }
+/* second section */
+.secondsect{
+    margin: 20px;
+    display: flex;
+    gap: 7em;
+    padding: 20px;
+}
+.secondsectimg img{
+    height: 300px;
+    width: 300px;
+}
+.secondsecttext{
+    width: 50%;
+}
+.secondsecttext p{
+    line-height: 1.5;
+    color: azure;
+    font-size: 20px;
+} 
 /* **************************************WEBPAGE RESPONSIVENESS******************************************/
 /* *****************************************NAVBAR**************************************************** */
 .material-icons-outlined{
@@ -221,6 +240,25 @@ span{
         justify-content: center;
     }
     .firstsecttext{
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+/* *********************************SECOND MAIN SECTION********************************************** */
+@media screen and (max-width: 870px){
+    .secondsect{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        width: 100%;
+    }
+    .secondsectimg{
+        display: flex;
+        justify-content: center;
+    }
+    .secondsecttext{
         justify-content: center;
         width: 100%;
     }
