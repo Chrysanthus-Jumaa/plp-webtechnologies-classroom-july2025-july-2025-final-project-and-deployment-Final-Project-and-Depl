@@ -139,6 +139,40 @@ span{
     color: azure;
     font-size: 20px;
 } 
+/* third section */
+.thirdsect{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.thirdsect header h1{
+    color: azure;
+    font-size: 40px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.componenttext{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.componenttext p{
+    line-height: 1.5;
+    margin: 15px;
+    color: azure;
+    font-size: 22px;
+}
+.componenttext ul{
+    margin: 15px;
+}
+.componenttext ul li{
+    color: azure;
+    padding: 15px;
+    font-size: 20px;
+    list-style: circle;
+}
 /* **************************************WEBPAGE RESPONSIVENESS******************************************/
 /* *****************************************NAVBAR**************************************************** */
 .material-icons-outlined{
@@ -261,5 +295,20 @@ span{
     .secondsecttext{
         justify-content: center;
         width: 100%;
+    }
+}
+/* ****************************THIRD MAIN SECTION**************************************************** */
+@media screen and (max-width: 870px){
+    .thirdsect{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    .thirdsect header h1{
+        font-size: 20px;
+        line-height: 1;
+        text-align: center;
+        /* margin: 0; */
     }
 }
